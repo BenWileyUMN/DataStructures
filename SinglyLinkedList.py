@@ -27,7 +27,7 @@ class SinglyLinkedList:
                 checkNode.next.next = tmpNext
 
     def valueIsInLinkedList(self, value):
-        checkNode = self.head.next
+        checkNode = self.head
         while checkNode.value != value and checkNode != None:
             checkNode = checkNode.next
         if checkNode.value == value:
